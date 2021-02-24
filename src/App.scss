@@ -1,0 +1,250 @@
+@import './components/calendarUsers/users';
+@import './components/footer/footer';
+@import './components/modal/modal';
+@import './components/monthSwitcher/monthSwitcher';
+@import "components/calendarBody/calendarBody";
+
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #D7D7D7;
+}
+
+.weekend {
+  background: #F0F0F0;
+}
+
+.fas {
+  font-size: 12px;
+  padding: 5px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.calendar {
+  max-width: 1345px;
+  padding: 15px;
+}
+
+.monthBlock {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.navBtn {
+  background-color: transparent;
+}
+
+.chosenMonth {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  margin: 25px 0;
+  padding: 0 40px;
+}
+
+.addVacationBtn {
+  width: 144px;
+  height: 40px;
+  background: var(--btn-bg);
+  border-radius: 7px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addVacationBtn span {
+  font-size: 24px;
+  padding-right: 10px;
+}
+
+.outputItem {
+  min-width: 33px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  line-height: 28px;
+  border: 1px solid rgb(192, 192, 192);
+}
+
+.addVacationCell {
+  max-width: fit-content;
+  padding: 0 119px 24px 0;
+  margin: 0;
+  border-top: none;
+  border-left: none;
+}
+
+.outputDay {
+  padding: 7px;
+  text-align: center;
+  color: #000;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.outputDate {
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+}
+
+.sumCell {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+
+.nameCell {
+  padding: 9px 20px 7px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.dayCell {
+  text-align: center;
+}
+
+.dayCellOfMainRow {
+  background: var(--teamHeader-bg);
+}
+
+td.sumOfDaysOff {
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  background: var(--main-row);
+}
+
+
+.hideTable {
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.hiddenEmployees {
+  transform: rotateX(180deg);
+}
+
+.teamInfo span {
+  color: #949494;
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 5px;
+}
+
+.chevronBtn {
+  font-size: 10px;
+  padding: 10px 10px 0;
+}
+
+.hideTable {
+  height: 0;
+  display: block;
+  overflow: hidden;
+}
+
+.infoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBtn {
+  padding: 0 10px 5px 10px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.hiddenEmployees {
+  transform: rotateX(180deg);
+}
+
+tbody:after {
+  height: 33px;
+  display: table-row;
+  content: '';
+}
+
+:root {
+  --front-color: #9b99ff;
+  --designer-color: #7aafff;
+  --backend-color: #ff9999;
+  --manager-color: #ffa768;
+  --main-row: #F3F3F3;
+  --teamHeader-bg: rgba(155, 153, 255, 0.1);
+  --btn-bg: #48BA46;
+}
+
+tbody:nth-child(2) .employeeКRow,
+tbody:nth-child(2) .mainRow {
+  border-left: 3px solid var(--front-color);
+}
+tbody:nth-child(3) .employeeКRow,
+tbody:nth-child(3) .mainRow {
+  border-left: 3px solid var(--designer-color);
+}
+tbody:nth-child(4) .employeeКRow,
+tbody:nth-child(4) .mainRow {
+  border-left: 3px solid var(--backend-color);
+}
+tbody:nth-child(5) .employeeКRow,
+tbody:nth-child(5) .mainRow {
+  border-left: 3px solid var(--manager-color);
+}
+.month-switcher {
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+.month-switcher__month{
+  padding: 10px;
+}
+.month-switcher__btn {
+  background-color: transparent;
+  padding: 10px;
+}
+.hide {
+  display: none;
+}
+.rotateChevron {
+  transform: rotateX(180deg);
+}

@@ -1,0 +1,310 @@
+tbody:nth-child(2) .employeeКRow,
+tbody:nth-child(2) .mainRow {
+  border-left: 3px solid rgb(149, 147, 248);
+}
+
+tbody:nth-child(3) .employeeКRow,
+tbody:nth-child(3) .mainRow {
+  border-left: 3px solid rgb(121, 171, 248);
+}
+
+tbody:nth-child(4) .employeeКRow,
+tbody:nth-child(4) .mainRow {
+  border-left: 3px solid rgb(248, 148, 148);
+}
+
+tbody:nth-child(5) .employeeКRow,
+tbody:nth-child(5) .mainRow {
+  border-left: 3px solid rgb(246, 160, 99);
+}
+
+tbody:nth-child(2) .percent {
+  background-color: rgb(141, 139, 239);
+}
+
+tbody:nth-child(3) .percent {
+  background-color: rgb(122, 175, 255);
+}
+
+tbody:nth-child(4) .percent {
+  background-color: rgb(255, 153, 153);
+}
+
+tbody:nth-child(5) .percent {
+  background-color: rgb(255, 167, 104);
+}
+
+.dayCell {
+  min-width: 33.64px;
+  position: relative;
+}
+
+.vacation-cell_paid {
+  border-right: none;
+  border-left: none;
+}
+
+.vacation-cell_paid:before,
+.vacation-cell_unpaid:before {
+  content: '';
+  display: block;
+  position: relative;
+  min-width: 33.64px;
+  min-height: 26px;
+}
+
+.vacation-cell_ui-start:before {
+  left: 2px;
+}
+
+.vacation-cell_ui-end:before {
+  right: 2px;
+}
+
+.vacation-cell_paid:before,
+.vacation-cell_unpaid:before {
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+.vacation-cell_paid.vacation-cell_ui-start:before,
+.vacation-cell_unpaid.vacation-cell_ui-start:before {
+
+  border-radius: 3px 0 0 3px;
+}
+
+.vacation-cell_paid.vacation-cell_ui-end:before,
+.vacation-cell_unpaid.vacation-cell_ui-end:before {
+  /*right: 1px;*/
+  border-radius: 0 3px 3px 0;
+}
+
+.vacation-cell_unpaid.vacation-cell_ui-start:before,
+.vacation-cell_paid.vacation-cell_ui-start:before {
+  border-left: 1px solid transparent;
+}
+
+.vacation-cell_unpaid.vacation-cell_ui-end:before,
+.vacation-cell_paid.vacation-cell_ui-end:before {
+  border-right: 1px solid transparent;
+}
+
+.vacation-cell_ui-start.vacation-cell_ui-end:before {
+  max-width: 34px;
+  left: 1px;
+  border-radius: 3px;
+  margin-right: 1px;
+}
+
+tbody:nth-child(2) .vacation-cell_paid:before {
+  background-color: rgb(155, 153, 255);
+}
+
+tbody:nth-child(2) .vacation-cell_unpaid:before {
+  background-color: rgba(155, 153, 255, .1);
+}
+
+tbody:nth-child(2) .vacation-cell_paid:before,
+tbody:nth-child(2) .vacation-cell_unpaid:before {
+  border-color: rgb(155, 153, 255);
+}
+
+tbody:nth-child(3) .vacation-cell_paid:before {
+  background-color: rgb(122, 175, 255);
+}
+
+tbody:nth-child(3) .vacation-cell_unpaid:before {
+  background-color: rgba(122, 175, 255, .1);
+}
+
+tbody:nth-child(3) .vacation-cell_paid:before,
+tbody:nth-child(3) .vacation-cell_unpaid:before {
+  border-color: rgb(122, 175, 255);
+}
+
+tbody:nth-child(4) .vacation-cell_paid:before {
+  background-color: rgb(255, 153, 153);
+}
+
+tbody:nth-child(4) .vacation-cell_unpaid:before {
+  background-color: rgba(255, 153, 153, .1);
+}
+
+tbody:nth-child(4) .vacation-cell_paid:before,
+tbody:nth-child(4) .vacation-cell_unpaid:before {
+  border-color: rgb(255, 153, 153);
+}
+
+tbody:nth-child(5) .vacation-cell_paid:before {
+  background-color: rgb(255, 167, 104);
+}
+
+tbody:nth-child(5) .vacation-cell_unpaid:before {
+  background-color: rgba(255, 167, 104, .1);
+}
+
+tbody:nth-child(5) .vacation-cell_paid:before,
+tbody:nth-child(5) .vacation-cell_unpaid:before {
+  border-color: rgb(255, 167, 104);
+}
+
+tbody:nth-child(2) .vacation-cell_unpaid.vacation-cell_type-text:after {
+  color: rgb(155, 153, 255);
+}
+
+tbody:nth-child(3) .vacation-cell_unpaid.vacation-cell_type-text:after {
+  color: rgb(122, 175, 255);
+}
+
+tbody:nth-child(4) .vacation-cell_unpaid.vacation-cell_type-text:after {
+  color: rgb(255, 153, 153);
+}
+
+tbody:nth-child(5) .vacation-cell_unpaid.vacation-cell_type-text:after {
+  color: rgb(255, 167, 104);
+}
+
+.type-text {
+  position: relative;
+  color: #000;
+  font-size: 12px;
+  display: inline;
+  top: -23px;
+  z-index: 1;
+}
+
+.vacation-cell_unpaid.vacation-cell_type-text:after {
+  content: 'UnPd';
+}
+
+.vacation-cell_paid.vacation-cell_type-text:after {
+  content: 'Pd';
+  color: #fff;
+}
+
+.vacation-cell_type-text:after {
+  position: absolute;
+  color: #000;
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  top: 7px;
+  left: 0;
+  z-index: 1;
+}
+
+.vacation-cell_unpaid.vacation-cell_type-text_left_s:after {
+  left: 3px;
+}
+
+.vacation-cell_unpaid.vacation-cell_type-text_left_l:after {
+  left: 20px;
+}
+
+.vacation-cell_paid.vacation-cell_type-text_left_s:after {
+  left: 12px;
+}
+
+.vacation-cell_paid.vacation-cell_type-text_left_l:after {
+  left: 28px;
+}
+
+.fa-users {
+  font-size: 12px;
+  color: #949494;
+  margin-right: -5px;
+}
+
+tbody tr {
+  height: 33px;
+}
+
+.mainRow:last-child {
+  background: var(--main-row);
+}
+
+.teamInfo {
+  padding: 5px 10px 6px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  background: var(--teamHeader-bg);
+}
+
+.teamInfo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.teamInfo__name {
+  width: 200px;
+  padding: 0px 10px;
+}
+
+.teamInfo__block {
+  flex: 0 0 auto;
+  width: fit-content;
+}
+
+.teamInfo__block .fas {
+  margin-top: 0;
+}
+
+.teamInfo__block .chevronBtn {
+  font-size: 10px;
+  padding: 5px;
+}
+
+.teamInfo__block button {
+  background-color: transparent;
+}
+
+.teamInfo span {
+  color: #949494;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.percent {
+  padding: 0 4px;
+  font-size: 12px;
+  line-height: 1.2rem;
+  color: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  min-width: 24px;
+  margin: 0 13px;
+}
+
+.frontend .mainRow td {
+  background: rgba(155, 153, 255, 0.1);
+}
+
+.design .mainRow td {
+  background: rgba(122, 175, 255, 0.1);
+}
+
+.backend .mainRow td {
+  background: rgba(255, 153, 153, 0.1);
+}
+
+.managers .mainRow td {
+  background: rgba(255, 167, 104, 0.1);
+}
+
+.frontend .percent {
+  background: var(--front-color);
+}
+
+.design .percent {
+  background: var(--designer-color);
+}
+
+.backend .percent {
+  background: var(--backend-color);
+}
+
+.managers .percent {
+  background: var(--manager-color);
+}
