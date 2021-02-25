@@ -3,13 +3,7 @@ import uniqid from 'uniqid';
 import PropTypes from 'prop-types';
 import { CalendarUser } from '../calendarUsers';
 
-export const CalendarBody = (props) => {
-  const {
-    teamId,
-    lastDayOfCurrentMonth,
-    getDepartmentsInfoByName,
-    getTeamsNodeById
-  } = props;
+export const CalendarBody = ({teamId, lastDayOfCurrentMonth, getDepartmentsInfoByName, getTeamsNodeById}) => {
   const [isTeamUsersHide, setIsTeamUsersHide] = useState(false);
   const team = getTeamsNodeById('teams', teamId);
 
@@ -19,6 +13,7 @@ export const CalendarBody = (props) => {
     }
     return accumulator;
   }, []);
+
   const toggleUsersVisibility = () => {
     setIsTeamUsersHide(!isTeamUsersHide);
   }

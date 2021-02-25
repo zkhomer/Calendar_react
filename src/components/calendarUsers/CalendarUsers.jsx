@@ -4,14 +4,7 @@ import { formatInputToDate } from '../../utils'
 import { DayCells } from '../dayCells';
 import classNames from 'classnames';
 
-export const CalendarUser = (props) => {
-  const {
-    userId,
-    lastDayOfCurrentMonth,
-    getDepartmentsInfoByName,
-    getTeamsNodeById,
-    isTeamUsersHide
-  } = props;
+export const CalendarUser = ({userId, lastDayOfCurrentMonth, getDepartmentsInfoByName, getTeamsNodeById, isTeamUsersHide}) => {
   const user = getTeamsNodeById('users', userId);
   const userVacations = getDepartmentsInfoByName('vacations').filter((vacation) => {
     return userId === vacation.userId;

@@ -1,9 +1,11 @@
 import React, { useContext, useEffect } from 'react';
-import uniqid from "uniqid";
+
 import isWeekend from "date-fns/isWeekend";
+import StatisticContext from "../../context/footerContext";
+
 import classNames from 'classnames';
 import PropTypes from "prop-types";
-import StatisticContext from "../../context/footerContext";
+import uniqid from "uniqid";
 
 export const DayCells = ({filteredVacationsForCurrentMonth,lastDayOfCurrentMonth,userId})=> {
   const { teamStatisticList ,setTeamStatisticList } = useContext(StatisticContext)

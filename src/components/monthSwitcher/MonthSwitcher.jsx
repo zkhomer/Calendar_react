@@ -2,14 +2,12 @@ import React from 'react';
 import format from 'date-fns/format';
 import PropTypes from 'prop-types';
 
-export function MonthSwitcher(props) {
-  const { lastDayOfCurrentMonth } = props;
+export function MonthSwitcher({ lastDayOfCurrentMonth,updateDate }) {
   const currentMonth = format(lastDayOfCurrentMonth, 'MMMM');
   const currentYear = lastDayOfCurrentMonth.getFullYear();
 
   const switchMonth = (direction) => {
-    let newLastDay = props.lastDayOfCurrentMonth;
-    const { updateDate } = props;
+    let newLastDay = lastDayOfCurrentMonth;
     if (direction === 'previous') {
       newLastDay = new Date(newLastDay.getFullYear(), newLastDay.getMonth(), 0);
     }else if (direction === 'next') {

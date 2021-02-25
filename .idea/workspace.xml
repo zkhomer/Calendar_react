@@ -2,27 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd142a66-0056-463c-8a94-1b31ec0f3fc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/calendarBody/calendarBody.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/calendarUsers/users.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer/footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal/modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/monthSwitcher/monthSwitcher.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/context/footerContext.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/calendar/Calendar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendar/Calendar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/calendarBody/CalendarBody.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendarBody/CalendarBody.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/calendarUsers/CalendarUsers.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/calendarUsers/CalendarUsers.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dayCells/DayCells.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dayCells/DayCells.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/modal/Modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/Modal.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/monthSwitcher/MonthSwitcher.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/monthSwitcher/MonthSwitcher.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Date.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Date.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +39,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614118334011</updated>
-      <workItem from="1614118338345" duration="9231000" />
+      <workItem from="1614118338345" duration="11162000" />
     </task>
     <servers />
   </component>
